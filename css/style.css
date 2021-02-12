@@ -1,0 +1,100 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  background-image: url("../images/cream_dust.png");
+}
+
+header, footer
+{
+  background-image: url("../images/dark_dust.png");
+}
+
+.icon-block
+{
+  padding: 0 15px;
+}
+.icon-block .material-icons
+{
+  font-size: inherit;
+}
+
+i.fa, i.fab {
+  color: #505050;
+}
+
+.container
+{
+  max-width: 1000px;
+}
+
+.card
+{
+  margin-bottom: 5rem;
+  margin-left: 0.0rem;
+  margin-right: 0.0rem;
+}
+
+.card .card-content p
+{
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.card .card-content
+{
+  padding-bottom: 8px;
+}
+
+.project-type
+{
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-top: 0.0rem;
+  margin-bottom: -1.2rem;
+}
+
+.footnote
+{
+  font-size: 0.85rem;
+}
+
+/* Modification of classes new and badge */
+div.my-badges
+{
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+span.my-badge
+{
+  min-width: 3rem;
+  margin-right: 4px;
+  padding: 3px 6px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.btn
+{
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+footer a
+{
+  color: #eeeeee;
+}
