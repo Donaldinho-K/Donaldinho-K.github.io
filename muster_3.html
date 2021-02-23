@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Muster</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/afdf2b8811.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="grey lighten-4 grey-text text-darken-3">
+
+    <!-- Banner -->
+    <header class="section no-pad-bot grey darken-4" id="index-banner">
+        <div class="container">
+            <h1 class="header center grey-text text-lighten-5">Muster aus 3-, 4- und 6-Ecken</h1>
+            <div class="row center">
+                <h5 class="header col s12 light grey-text text-lighten-0">
+                    Projekt 2019 - 2020 - 2021
+                </h5>
+            </div>
+            <br>
+        </div>
+    </header>
+
+    <br><br>
+
+    <div class="container">
+
+        <!-- Intro -->
+        <div class=section>
+            <div class="row">
+                 <div class="col s12 m8 l12" style="font-size: 1.80rem;">
+		    <p style="color:blue;">
+			<a href="muster_2.html"> (2) Forschungsfrage </a>
+		    </p>
+                </div>
+
+                 <div class="col s12 m8 l12" style="font-size: 1.80rem;">
+		    <p style="color:blue;">
+			(3) Definitionen
+		    </p>
+                </div>
+
+                 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
+                    <p>
+Meine Muster sollen aus Polygonen <b> (Definition 1) </b> bestehen. Wenn man (gleiche oder verschiedene) Polygone um eine Ecke herum legt, ohne dass eine Lücke bleibt, dann nennen wir diese Polygone zusammen eine Gruppe <b> (Definition 2) </b>. Ein Muster <b> (Definition 4) </b> entsteht, wenn sich eine Gruppe immer weiter fortsetzen lässt, das heißt, wenn sich (die gleiche oder mehrere verschiedene) Gruppen aneinanderlegen <b> (Definition 3) </b> lassen, so dass am Ende der gesamte Tisch ohne Lücken abgedeckt wird. Die Muster werden dabei immer komplizierter je mehr verschiedene Gruppen dafür verwendet werden.
+		    </p>
+                 </div>
+                 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
+		    <p><b>
+			Definition 1: Polygone
+		    </b></p>
+                    <p>
+<b style="color:red;"> Polygone </b> sind regelmäßige geometrische Formen mit geraden Kanten, die überall den gleichen Winkel und die gleiche Kantenlänge haben. Die Ecken dieser Polygone liegen auf einem Kreis. Es gibt 3-Ecke, 4-Ecke, 5-Ecke, 6-Ecke und noch mehr Ecke, aber ein 2-Eck und ein 1-Eck gibt es nicht. Der Innenwinkel, also der Winkel zwischen zwei Polygonkanten wird immer größer, je mehr Ecken ein Polygon hat. Beim Dreieck ist der Innenwinkel 60 Grad, beim Viereck 90 Grad, beim Fünfeck 108 Grad und beim Sechseck ist er 120 Grad. Egal wie viele Ecken ein Polygon hat, der Innenwinkel kann niemals 180 Grad erreichen.
+		   </p>
+                </div>
+
+		<br>
+                <img src="images/polygon_kreis.png" alt="polygone" width="800">
+		<br>
+		<br>
+
+	<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+		    <p><b>
+			Definition 2: Gruppen
+		    </b></p>
+            <p>
+Für eine <b style="color:red;"> Gruppe </b> legen wir mehrere Polygone um eine Ecke herum, so dass keine Lücke übrig bleibt. Dazu müssen sich die Innenwinkel der Polygone zu exakt <b> 360 Grad </b> aufsummieren. Weil alle Kanten gleich lang sind, liegen die Polygone dann automatisch <u>Kante-an-Kante</u>. Wenn wir eine Gruppe gefunden haben, kann man die Reihenfolge der Polygone vertauschen und findet entweder eine neue oder wieder die gleiche Gruppe. <br><br>
+
+Ich merke mir eine Gruppe mit einem <b style="color:blue;"> Code </b>, für den ich die Reihenfolge der Polygone durch Zahlen aufschreibe. Zum Beispiel bedeutet  <b style="color:blue;"> 3-4-6-4 </b>, dass ich ein Dreieck, ein Viereck, ein Sechseck und dann noch ein Viereck zu einer Gruppe zusammenlege. Die Innenwinkel sind bei dieser Gruppe <br> 60 Grad + 90 Grad + 120 Grad + 90 Grad = 360 Grad. <br><br>
+
+Je nachdem mit welchem Polygon ich dabei anfange, gibt es <u> verschiedene </u> Codes für die <u> gleiche </u> Gruppe (z.B.  <b style="color:blue;"> 3-4-6-4, 4-6-4-3, 6-4-3-4, 4-3-4-6 </b>). Außerdem kann man die Polygone einer Gruppe im Uhrzeigersinn oder gegen den Uhrzeigersinn aufzählen. Das ergibt dann nochmals verschiedene Codes für die gleiche Gruppe (z.B.  <b style="color:blue;"> 3-4-4-6, 6-4-4-3 </b>). Aber es können beim Vertauschen der Polygone auch neue Gruppen entstehen (z.B.  <b style="color:blue;"> 3-4-4-6 </b> und  <b style="color:blue;"> 3-4-6-4 </b> sind <u> verschiedene </u> Gruppen. <br><br>
+
+Eine <u><b> einfache Gruppe </b></u> besteht nur aus gleichen Polygonen (zum Beispiel <b style="color:blue;"> 3-3-3-3-3-3 </b> oder  <b style="color:blue;"> 4-4-4-4 </b>). Eine <u><b> gemischte Gruppe </b></u> kombiniert verschiedene Polygone (z.B.  <b style="color:blue;"> 3-4-6-4 </b>).
+	    </p>
+	</div>
+
+	<br>
+
+	<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+		    <p><b>
+			Definition 3: Zusammenlegen
+		    </b></p>
+            <p>
+Jede Gruppe hat eine Ecke in der Mitte. Beim <b style="color:red;"> Zusammen- legen </b> von zwei Gruppen müssen wir aufpassen, dass dadurch nicht unbeabsichtigt eine neue zusätzliche Ecke oder Gruppe entsteht, sondern nur für jede der beiden Gruppen eine Ecke.
+	    </p>
+	</div>
+		<br>
+                <img src="images/zusammenlegen_2.jpg" alt="zusammenlagen" width="800">
+		<br>
+		<br>
+
+	<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+		    <p>
+Dieses Bild zeigt wie man die Gruppen <b style="color:blue;"> 4-3-4-3-3 </b> und <b style="color:blue;"> 3-4-6-4 </b> richtig zusammenlegt <i> (links)</i>. Wenn wir sie <u> nebeneinander- legen </u> (Mitte), entsteht dazwischen eine neue Ecke mit der neuen Gruppe <b style="color:blue;"> 4-4-3-3-3 </b>. Wir müssen sie also besser so hinlegen, dass sich die beiden Gruppen ein gemeinsames Dreieck und ein Viereck <u>teilen</u>. Dann bleibt es bei den beiden ursprünglichen Ecken (rechts). Daran erkennt man, dass man nicht jedes Paar von Gruppen kombinieren kann, sondern nur solche Gruppen, bei denen zwei aufeinanderfolgende Polygone gleich sind (<u>Überlapp</u>). In diesem Beispiel ist das ein Dreieck und ein Viereck.
+	    </p>
+	</div>
+
+	<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+		    <p><b>
+			Definition 4: Muster
+		    </b></p>
+            <p>
+Um ein <b style="color:red;"> Muster </b> zu erzeugen, legen wir Gruppen (<u>Definition 2</u>) von Polygonen (<u>Definition 1</u>) überlappend (<u>Definition 3</u>) immer so hin, dass die Polygone Kante-an-Kante liegen und keine Lücken übrig bleiben. Ein Muster entsteht, wenn immer wieder die gleichen Gruppen von Polygonen aneinander passen und sich das Muster dadurch regelmäßig immer weiter fortsetzen lässt. <u>Einfache Muster</u> bestehen nur aus <i>einer</i> Art von Polygonen (also nur aus einer einfachen Gruppe), <u>gemischte Muster</u> bestehen aus einer gemischten Gruppe. <u>Doppelt gemischte Muster</u> kombinieren zwei verschiedenen Gruppen, bei <u>dreifach gemischten Mustern</u> sind es drei verschiedene Gruppen und so weiter. <br><br>
+
+Hier sind Beispiele für einfache, gemischte, doppelt gemischte und dreifach gemischte Muster. Die Gruppen sind durch Kreise markiert:
+
+		<br>
+		<br>
+                <img src="images/1-2-3_neu.jpg" alt="1-2-3" width="800">
+		<br>
+		<br>
+
+Im Internet habe ich noch andere Definitionen für Muster und die Einteilung von einfach bis kompliziert gefunden. Für diese Definitionen probiert man aus, wie man ein Muster verschieben oder drehen kann, so dass jede Kante genau wieder auf einer Kante liegt. Das kann man z.B. machen, in dem man das gleiche Muster einmal auf ein Papier und einmal auf eine durchsichtige Folie zeichnet und diese dann übereinanderlegt. Zwei Ecken, die so übereinandergelegt werden können, zählen dann als <u>gleich</u> und die Kompliziertheit eines Musters hängt davon ab, wie viele verschiedene (also nicht gleiche) Ecken ein Muster hat. <br><br>
+
+Das ist eigentlich so ähnlich wie meine eigene Definition mit den einfach, doppelt und dreifach gemischten Mustern. Aber nicht <i>genau</i> dasselbe, denn nicht alle Ecken mit der glei-chen Gruppe (gleiche Ecken nach meiner Definition) können in einem komplizierten Muster auch übereinandergelegt werden (gleiche Ecken nach der Übereinanderlege-Definition). <br><br>
+
+Ich habe z.B. Muster aus Dreiecken und Vierecken gelegt:
+
+		<br>
+		<br>
+                <img src="images/muster_definition_2.jpg" alt="1-2-3" width="800">
+		<br>
+		<br>
+
+Das erste Muster ist nach meiner Definition einfach gemischt (nur eine Art von Gruppen). Die zweiten beiden Muster sind doppelt gemischt und das dritte ist dreifach gemischt. Die nächsten beiden Muster in der zweiten Zeile sind nach meiner Definition immer noch dreifach gemischt (grüne Kreise), aber nach der Übereinanderlegen-Definition sind manche Ecken mit gleicher Gruppe trotzdem nicht gleich (orange Kreise), wenn sie an verschiedenen Stellen innerhalb der gelben oder roten Streifen liegen. <br><br>
+
+Diese Muster mit immer breiteren gelben oder roten Streifen finde ich aber eigentlich nicht so spannend und sie werden auch nicht wirklich komplizierter, weil innerhalb der Streifen nur immer noch größere Bereiche mit einfachen Mustern dazu kommen. Deswegen möchte ich keine solche Muster mit unnötig großen regulären Bereichen haben und sage, dass kein Muster einen der folgenden Teilbereiche enthalten darf:
+
+		<br>
+		<br>
+                <img src="images/regular_subregion.jpg" alt="1-2-3" width="800">
+		<br>
+		<br>
+
+Denn solche Teilbereiche, in denen eine einfache Gruppe nur von Gruppen mit der gleichen Gruppen-Art umgeben ist, sind ein Anzeichen für langweilige Bereiche. Damit sind auch die Muster oben in der zweiten Reihe mit den immer breiteren Streifen auch ausgeschlossen.
+
+	    </p>
+	</div>
+
+                 <div class="col s12 m8 l12" style="font-size: 1.80rem;">
+		    <p style="color:blue;">
+			<a href="muster_4.html">
+			(4) Durchführung des Projektes </a>
+		    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+  </div>
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4">
+        <br>
+        <div class="container grey-text" style="font-size: 0.8rem; ">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <h6 class="grey-text text-lighten-2">Contact</h6>
+                    <p>
+                        <i class="tiny material-icons email left" style="margin-right: 0.3rem; margin-top:0.1rem;">mail</i>
+                        <a class="grey-text text-lighten-2" href="mailto:donaldinhoQ@gmail.com">donaldinhoQ@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col s12 m6 l6">
+                    <h6 class="grey-text text-lighten-2">Copyright</h6>
+                    <p>
+                        © 2021 Donald K.<br>
+                        Made using <a class="grey-text text-lighten-2" href="http://materializecss.com" target="_blank">Materialize CSS</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="js/materialize.js"></script>
+
+  </body>
+</html>
+
