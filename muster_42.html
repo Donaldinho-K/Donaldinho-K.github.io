@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Muster</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/afdf2b8811.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="grey lighten-4 grey-text text-darken-3">
+
+    <!-- Banner -->
+    <header class="section no-pad-bot grey darken-4" id="index-banner">
+        <div class="container">
+            <h1 class="header center grey-text text-lighten-5"> Muster aus 3-, 4- und 6-Ecken </h1>
+            <div class="row center">
+                <h5 class="header col s12 light grey-text text-lighten-0"> Projekt 2019 - 2020 - 2021 </h5>
+            </div>
+            <br>
+        </div>
+    </header>
+
+    <br><br>
+
+
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+
+
+    <div class="container">
+
+        <div class=section>
+            <div class="row">
+                 <div class="col s12 m8 l12" style="font-size: 1.80rem;">
+		    <p style="color:blue;">
+			<a href="muster_41.html"> (4.1) Einfache Muster </a>
+		    </p>
+                </div>
+
+                 <div class="col s12 m8 l12" style="font-size: 1.80rem;">
+		    <p style="color:blue;">
+			(4.2) Gemischte Muster
+		    </p>
+                </div>
+
+
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+
+
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+Zunächst müssen wir herausfinden, wie viele Dreiecke, Vierecke und Sechsecke jeweils zu einer Gruppe um eine Ecke herum passen. Aus diesen Gruppen können wir dann gemischte Muster bilden.
+<br><br>
+
+Bei einer Gruppe muss die Summe der Innenwinkel 360 Grad ergeben, also zum Beispiel 6 Dreiecke ergibt 6 x 60 Grad = 360 Grad oder 4 Vierecke ergibt 4 x 90 Grad = 360 Grad. <br><br>
+
+Wenn ich zum Beispiel ein Sechseck und zwei Vierecke nehme, dann ist die Summe der Innenwinkel: 120 Grad + 2 x 90 Grad = 300 Grad. Das heißt es fehlen noch 60 Grad bis 360 Grad. Es passt also noch genau ein Dreieck dazu, um eine Gruppe zu bilden. <br><br>
+
+Ich finde alle möglichen Kombinationen mit einer Tabelle. Wenn alle Felder ausgefüllt sind, kann ich sicher sein, dass ich keine Kombination vergessen habe. Meine Tabelle hat 4 Zeilen für 0, 1, 2 oder 3 Sechsecke und 5 Spalten für 0, 1, 2, 3 oder 4 Vierecke. In die Tabelle trage ich ein, wie viele Dreiecke noch für eine vollständige Gruppe gebraucht werden:
+	</p>
+</div>
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<br>
+		<img src="images/gemischte_tabelle_1.jpg" alt="Text" width="400">
+	<br>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+		Bei manchen Feldern kann gar keine Gruppe gebildet werden. Bei den Feldern mit einem roten Kreuz ist die Summe der Innenwinkel von Vierecken und Sechsecken ja schon größer als 360 Grad. Zum Beispiel: 2 Sechsecke und 2 Vierecke ergeben
+<br> <br>
+2 x 120 Grad + 2 x 90 Grad = 420 Grad
+<br> <br>
+also mehr als 360 Grad. Diese Kombinationen passen also nicht. Bei den Feldern mit einem grünen Kreuz ist auch keine Gruppe möglich, weil zum Beispiel bei 3 Vierecken der Innenwinkel 3 x 90 Grad = 270 Grad ist, also noch 90 Grad fehlen. Die 90 Grad kann man aber nicht mit Dreiecken oder Sechsecken zusammensetzen. Bei nur einem Viereck fehlen noch 270 Grad, aber auch die kann man nicht aus Dreiecken mit 60 Grad oder Sechsecken mit 120 Grad zusammensetzen (man braucht 270 : 60 = 4,5 Dreiecke).
+<br> <br>
+Es bleiben also noch 7 Felder übrig. Die Felder mit 0 Vierecken und 0 Sechsecken, mit 4 Vierecken und 0 Sechsecken oder mit 0 Vierecken und 3 Sechsecken sind leicht, denn das sind die einfachen Gruppen, die nur aus einer Sorte von Polygonen bestehen.
+<br> <br>
+Dann bleiben noch 4 Felder übrig, für die ich die Anzahl der Dreiecke ausrechnen muss.
+<br> <br>
+Jetzt habe ich die Anzahl der Dreiecke, Vierecke und Sechsecke gefunden, mit denen ich eine Gruppe bilden kann. Als nächstes probieren wir die verschiedenen Reihenfolgen aus, in der die Polygone für eine Gruppe um eine Ecke herum gelegt werden können. Für jede dieser Reihenfolgen schreibe ich den Code auf:
+
+
+	</p>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<br>
+		<img src="images/gemischte_tabelle_2.jpg" alt="Text" width="400">
+	<br>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+		Damit habe ich alle Möglichkeiten gefunden, mit denen man Dreiecke, Vierecke, und Sechsecke um eine Ecke herum als Gruppe platzieren kann. Es gibt 10 verschiedene Codes.
+<br> <br>
+Aus manchen Kombinationen lassen sich Muster über den ganzen Tisch fortsetzen, bei anderen passen die Gruppen nicht zusammen. In der Tabelle sind die schwarzen Codes die einfachen Gruppen, die blauen Codes sind die gemischten Gruppen und die roten Codes sind die gemischten Gruppen, aus denen man kein Muster fortsetzen kann.
+<br> <br>
+Ich habe also herausgefunden, dass es zusätzlich zu den 3 einfachen Mustern (in schwarz:
+3-3-3-3-3-3,  4-4-4-4,  6-6-6 ) noch genau 5 gemischte Muster aus Dreiecken, Vierecken und Sechsecken gibt, mit den Gruppen  3-3-3-3-6,   3-6-3-6,   3-3-3-4-4,   3-3-4-3-4,   3-4-6-4 :
+
+
+	</p>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<br>
+		<img src="images/gemischte_gruppen_1.jpg" alt="Text" width="800">
+	<br>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+		Die Gruppen:  3-3-6-6  und  3-4-4-6  können nicht zu einem Muster fortgesetzt werden.
+	</p>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<br>
+		<img src="images/gemischte_gruppen_2.jpg" alt="Text" width="400">
+	<br>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+		Hier sind die Bilder von allen 5 gemischten Mustern:
+	</p>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<br>
+		<img src="images/gemischte_muster.jpg" alt="Text" width="800">
+	<br>
+</div>
+
+
+
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+
+
+                 <div class="col s12 m8 l12" style="font-size: 1.80rem;">
+		    <p style="color:blue;">
+			<a href="muster_43.html">
+			(4.3) Doppelt gemischte Muster </a>
+		    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+  </div>
+
+
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+<!-- *********************************************************************************** -->
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4">
+        <br>
+        <div class="container grey-text" style="font-size: 0.8rem; ">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <h6 class="grey-text text-lighten-2">Contact</h6>
+                    <p>
+                        <i class="tiny material-icons email left" style="margin-right: 0.3rem; margin-top:0.1rem;">mail</i>
+                        <a class="grey-text text-lighten-2" href="mailto:donaldinhoQ@gmail.com">donaldinhoQ@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col s12 m6 l6">
+                    <h6 class="grey-text text-lighten-2">Copyright</h6>
+                    <p>
+                        © 2021 Donald K.<br>
+                        Made using <a class="grey-text text-lighten-2" href="http://materializecss.com" target="_blank">Materialize CSS</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="js/materialize.js"></script>
+
+  </body>
+</html>
+
