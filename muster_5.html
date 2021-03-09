@@ -62,34 +62,45 @@
 
 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
 	<p>
-		Hier steht normaler Text und <br>
-		hier steht <b>fetter Text</b> und <br>
-		hier steht <u>unterstrichener Text</u> und <br>
-		hier steht <b style="color:red;">roter Text</b> und <br>
-		hier steht <b style="color:blue;">blauer Text</b>. <br>
+
+Ich habe herausgefunden, dass man außer den <b style="color:red;"> 3 </b> <u> regulären Mustern </u> noch <b style="color:red;"> 5 </b> <u> einfach gemischte Muster </u> erzeugen kann, wenn man Dreiecke, Vierecke und Sechsecke mischt. Von den <u> doppelt gemischten Mustern </u> habe ich <b style="color:red;"> 30 </b> gefunden und darunter sind sogar <b style="color:red;"> 13 </b> Muster, die auf der Wikipedia-Seite vergessen worden sind. Von den <u> dreifach gemischten Mustern </u> habe ich für 28 Kombinationen neue Muster gefunden. Insgesamt bin ich auf <b style="color:red;"> 37 </b> verschiedene <u> dreifach gemischte Muster </u> gekommen. Ich habe alle diese Muster systematisch erzeugt, indem ich Tabellen benutzt habe und dann alle Felder einzeln untersucht habe. Dadurch kann ich immer überprüfen, ob ich eine Kombination vergessen habe. Viele Kombinationen konnte ich zum Glück schon ohne Ausprobieren von vorne herein ausschließen. <br><br>
+
+Mit der Einteilung in einfach, doppelt und dreifach gemischte Muster kann man die Muster nach ihrer Kompliziertheit ordnen. Man könnte die Muster aber auch anders einteilen, z.B. in Muster, die nur 3- und 4-Ecke benutzen, welche, die nur 3- und 6-Ecke benutzen und welche, die alle drei Polygone benutzen. Wenn man die Muster auf Seite 11 und 14 genau anguckt, erkennt man sogar noch andere Ähnlichkeiten. Es gibt nämlich eigentlich nur drei verschiedene Arten, wie sich die Muster wiederholen. Das sind: <b style="color:red;"> Streifen-Muster </b>, <b style="color:red;"> Gitter-Muster </b> und <b style="color:red;"> Waben-Muster </b>:
+
 	</p>
 </div>
 
-
-<!-- ********** -->
-
-
-<div class="col s12 m8 l8" style="font-size: 1.30rem;">
-	<p><b>
-		ÜBERSCHRIFT
-	</b></p>
-</div>
-
-
-<!-- ********** -->
-
-
 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
 	<br>
-		<img src="images/BILD_DATEI.png" alt="Text" width="800">
+		<img src="images/muster_arten_3.png" alt="Text" width="800">
 	<br>
 </div>
 
+<div class="row">
+	<div class="col s12 m8 l5" style="font-size: 1.30rem;">
+	</div>
+
+	<div class="col s12 m8 l6" style="font-size: 1.30rem;">
+		<p>
+
+<i> Bei allen Mustern, die ich gefunden habe, wiederholen sich die Gruppen immer auf eine von drei verschiedenen Arten. Der Unterschied ist dann nur wie die <u> Teilmuster </u> aussehen, die sich wiederholen. In diesem Bild sind in der <u> ersten Spalte </u> Beispiel-Muster aus 3- und 4-Ecken, in der <u> zweiten Spalte </u> Muster aus 3- und 6-Ecken und in der <u> dritten Spalte </u> Muster aus 3-, 4- und 6-Ecken. Die <u> Zeilen </u> zeigen von oben nach unten: <b>Streifen-Muster</b>, <b>Gitter-Muster</b> und <b>Waben-Muster</b>.
+</i><br><br>
+
+		</p>
+	</div>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+
+Die Idee, die komplizierte Suche nach neuen Mustern in viele einfache Probleme aufzuteilen, indem ich jede Kombination (jeden Tabelleneintrag) einzeln untersucht habe, hat sehr gut funktioniert. So habe ich viele Muster entdeckt, auf die ich sonst nie gekommen wäre. Leider wird aber sogar die Suche nach Mustern für eine feste Kombination von Gruppen immer schwieriger, je mehr verschiedene Gruppen man mischt. Bei den dreifach gemischten Mustern hat es manchmal schon eine ganze Weile gedauert, bis ich ein Muster gefunden hatte. Deswegen kann ich mir leider nicht 100% sicher sein, dass ich nicht doch ein Muster übersehen habe. Um sicher zu gehen, sollte ich vielleicht die Kombinationen mit den blauen Kreuzen in der Tabelle auf Seite 12 nochmal genauer untersuchen. <br><br>
+
+Außerdem habe ich gesehen, dass es bei den doppelt und dreifach gemischten Mustern für einige der Gruppen-Kombinationen mehrere Muster gibt. Manchmal entstehen die dadurch, dass einfach zusätzliche Reihen oder Ringe von Polygonen eingefügt werden. Diese Muster sind dann alle ziemlich ähnlich. In meinem Projekt wollte ich aber möglichst viele ganz unterschiedliche Muster finden. Daher habe ich meine Muster ja so definiert, dass sie keine großen regelmäßigen Bereiche enthalten dürfen (Definition 4). <br><br>
+
+Mit meiner Methode könnte ich als nächstes auch <u>vierfach gemischte Muster</u> untersuchen. Für die <b style="color:red;"> 10 </b> Gruppen wäre das eine riesige Tabelle mit <b> 10 x 10 x 10 x 10 = 10.000 </b> Einträgen. Da mich aber nur Kombinationen mit vier <u>verschiedenen</u> Gruppen interessieren, sind es nur <b> 10 x 9 x 8 x 7 = 5.040 </b> Kombinationen. Wieder ist die <u>Reihenfolge</u>, in der ich die Gruppen auswähle egal, d.h. zu jeder Kombination gibt es <b>1 x 2 x 3 x 4 = 24</b> <u>Permutationen</u>. Ich muss also eigentlich nur <b>5.040 / 24 = 210</b> verschiedene <u>sortierte Kombinationen</u> ausprobieren und von denen fallen noch ein paar weg, z.B. wenn eine Gruppe <u>zu allen drei</u> anderen Gruppen nicht passt.
+
+	</p>
+</div>
 
 
 <!-- *********************************************************************************** -->
