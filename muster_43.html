@@ -62,32 +62,65 @@
 
 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
 	<p>
-		Bei den doppelt gemischten Mustern verwende ich zwei verschiedene Gruppen, das heißt ich kombiniere zwei verschiedene einfache oder gemischte Gruppen miteinander. Ich kann wieder alle möglichen Kombinationen systematisch mit einer Tabelle ausprobieren, damit ich keine Kombination aus Versehen vergesse.
-Wir haben 3 einfache Gruppen, 5 gemischte Gruppen und noch 2 gemischte Gruppen, die alleine nicht zu einem Muster fortgesetzt werden können. Insgesamt haben wir also 10 mögliche verschiedene Gruppen, die ich miteinander kombinieren kann.
-Deswegen brauche ich eine Tabelle mit 10 Zeilen und 10 Spalten und muss 10 x 10 = 100 Kombinationen ausprobieren. Zum Glück kann ich aber viele Kombinationen ausschließen.
+		Bei den doppelt gemischten Mustern verwende ich zwei verschiedene Gruppen, das heißt ich kombiniere zwei verschiedene einfache oder gemischte Gruppen miteinander. Ich kann wieder alle möglichen Kombinationen systematisch mit einer Tabelle ausprobieren, damit ich keine Kombination aus Versehen vergesse.<br><br>
 
-(a)	Alle Kombinationen auf der Diagonale der Tabelle (auf der nächsten Seite) sind eigentlich gar nicht doppelt, sondern nur einfach gemischt, weil in der Zeile und der Spalte die gleiche Gruppe steht. Diese Muster habe ich bereits gefunden. Der Buchstabe „E“ steht für einfache Muster, der Buchstabe „G“ für gemischte.
+Wir haben 3 einfache Gruppen, 5 gemischte Gruppen und noch 2 gemischte Gruppen, die alleine nicht zu einem Muster fortgesetzt werden können. Insgesamt haben wir also 10 mögliche verschiedene Gruppen, die ich miteinander kombinieren kann. <br><br>
 
-(b)	Alle Kombinationen unterhalb der Diagonale muss ich nicht ausprobieren, weil über der Diagonale die gleiche Kombination nochmal vorkommt. Damit kann ich gleich die Hälfte aller Felder ausschließen. In diesen Feldern steht ein roter Kreis.
+Deswegen brauche ich eine Tabelle mit 10 Zeilen und 10 Spalten und muss 10 x 10 = 100 Kombinationen ausprobieren. Zum Glück kann ich aber viele Kombinationen ausschließen.<br><br>
 
-(c)	Wenn zwei gemischte Gruppen zusammenpassen sollen, dann müssen zwei aufeinanderfolgende Polygone (zwei aufeinanderfolgende Zahlen im Code) gleich sein (Definition 3). Wenn es solche zwei gleichen Polygone nicht gibt (zum Beispiel bei der Kombination von 3-4-6-4 und 6-6-6), dann können die Gruppen auf keinen Fall zusammenpassen. Damit lassen sich nochmal viele Tabelleneinträge aus-schließen. Das sind die Felder mit grünen Kreuzen.
+(a)	Alle Kombinationen auf der Diagonale der Tabelle (auf der nächsten Seite) sind eigentlich gar nicht doppelt, sondern nur einfach gemischt, weil in der Zeile und der Spalte die gleiche Gruppe steht. Diese Muster habe ich bereits gefunden. Der Buchstabe „E“ steht für einfache Muster, der Buchstabe „G“ für gemischte. <br><br>
+
+(b)	Alle Kombinationen unterhalb der Diagonale muss ich nicht ausprobieren, weil über der Diagonale die gleiche Kombination nochmal vorkommt. Damit kann ich gleich die Hälfte aller Felder ausschließen. In diesen Feldern steht ein roter Kreis.<br><br>
+
+(c)	Wenn zwei gemischte Gruppen zusammenpassen sollen, dann müssen zwei aufeinanderfolgende Polygone (zwei aufeinanderfolgende Zahlen im Code) gleich sein (Definition 3). Wenn es solche zwei gleichen Polygone nicht gibt (zum Beispiel bei der Kombination von 3-4-6-4 und 6-6-6), dann können die Gruppen auf keinen Fall zusammenpassen. Damit lassen sich nochmal viele Tabelleneinträge aus-schließen. Das sind die Felder mit grünen Kreuzen.<br><br>
 	
 	</p>
 </div>
 
-
-<!-- ********** -->
-
-
 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
-	<p><b>
-		ÜBERSCHRIFT
-	</b></p>
+	<br>
+		<img src="images/Bild_zusammenlegen.png" alt="Text" width="500">
+	<br>
 </div>
 
+<div class="row">
+	<div class="col s12 m8 l5" style="font-size: 1.30rem;">
+	</div>
 
-<!-- ********** -->
+	<div class="col s12 m8 l6" style="font-size: 1.30rem;">
+		<p>
+<i>In diesem Beispiel passen die beiden Gruppen 3-4-6-4 und 3-3-4-3-4 zusammen,
+weil die aufeinanderfolgenden Polygone 3-4 in beiden Codes vorkommen.</i> <br><br>
+		</p>
+	</div>
+</div>
 
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+
+(d)	Es bleiben 23 Kombinationen, die ich wirklich ausprobieren muss. <b>Zum Glück viel weniger als alle 100 Kombinationen!</b>
+	</p>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<br>
+		<img src="images/Tabelle_doge.png" alt="Text" width="800">
+	<br>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+
+Bei 10 von diesen Kombinationen konnte ich die beiden gemischten Gruppen nicht zu einem Muster fortsetzen. Das sind die Felder mit einem blauen Kreuz in der Tabelle. Bleiben 13 Felder. Bei 3 Kombinationen konnte ich ein Muster konstruieren und bei 6 Kombinationen habe ich zwei verschiedene Muster aus den beiden Gruppen zusammensetzen können. In einem Fall waren es drei Möglichkeiten und in drei Feldern habe ich sogar vier Muster gefunden. Insgesamt habe ich also <b style="color:red;">30</b> doppelt gemischte Muster gefunden.<br><br>
+
+Weiter unten zeige ich Bilder von allen <b style="color:red;">30</b> doppelt gemischten Mustern. Man kann hier verschiedene Arten von Mustern unterscheiden. Erst kommen 10 Muster, die nur aus <u>Dreiecken</u> und <u>Vierecken</u> bestehen, d.h. es werden nur die Gruppen <b style="color:blue;">3-3-3-4-4</b> und
+<b style="color:blue;">3-3-4-3-4</b> (und vielleicht noch  <b style="color:blue;">3-3-3-3-3-3</b> und <b style="color:blue;">4-4-4-4</b>) miteinander gemischt. Dann kommen 10 Muster, die nur aus <u>Dreiecken</u> und <u>Sechsecken</u> bestehen, d.h. aus den Gruppen <b style="color:blue;">6-3-3-3-3</b>,
+<b style="color:blue;">6-3-6-3</b>, und <b style="color:blue;">6-6-3-3</b> (und vielleicht noch  <b style="color:blue;">3-3-3-3-3-3</b> und <b style="color:blue;">6-6-6</b>). Als letztes kommen 10 Muster, die <u>Drei-, Vier- und Sechsecke</u> benutzen, d.h. die Gruppen  <b style="color:blue;">3-4-3-6</b> oder  <b style="color:blue;">3-4-4-6</b> werden mit einer anderen Gruppe gemischt. Muster, die nur Vierecke und Sechsecke benutzen gibt es nicht, weil es ja auch keine Gruppe mit nur Vier- und Sechsecken gibt.<br><br>
+Auf der Wikipedia-Seite zu <a href="https://de.wikipedia.org/wiki/Parkettierung" target="_blank"> „Parkettierungen“ </a>, steht, dass es insgesamt 20 doppelt gemischte Muster gibt (dort heißen diese Muster demi-regulär). Von diesen 20 Mustern enthalten aber 3 Muster Zwölfecke, das heißt es bleiben 17 demi-reguläre Muster aus Dreiecken, Vierecken, und Sechsecken. Ich habe also 13 Muster gefunden, die auf der Wikipedia-Seite gar nicht stehen! Vielleicht liegt das daran, dass bei Wikipedia die Übereinanderlege-Definition benutzt worden ist. Denn bei dieser Definition werden ja manche Muster in verschiedene Muster-Arten eingeordnet, die bei meiner Definition zur gleichen Art gehören. Dazu steht im Wikipedia-Artikel aber leider nichts. Auf der nächsten Seite sind die 13 Muster, die ich mit meiner Definition neu entdeckt habe, mit einem roten Rahmen. Die Muster Nr. 6 & 7 und vor allem Nr. 21 gefallen mir am besten!<br><br>
+
+Wenn man genau hinguckt, dann sieht man, dass die Muster Nr. 1 bis Nr. 4 sich nur unterscheiden, dadurch dass immer eine zusätzliche Reihe von Dreiecken oder Vierecken eingefügt wurde. Genauso ist es bei den Mustern Nr. 12, Nr. 13 und Nr. 14, nur dass hier immer ein zusätzlicher Ring von Dreiecken um die Sechsecke eingefügt wird. Wenn man das so weiter macht, könnte man immer neue Muster erzeugen, aber die sind dann ziemlich langweilig, weil sie alle ähnlich aussehen. Deswegen habe ich in der <u>Definition 4</u> ja festgelegt, dass meine Muster keine großen einfachen Teilbereiche enthalten sollen.
+	</p>
+</div>
 
 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
 	<br>
