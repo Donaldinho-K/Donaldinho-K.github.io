@@ -62,23 +62,64 @@
 
 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
 	<p>
-		Hier steht normaler Text und <br>
-		hier steht <b>fetter Text</b> und <br>
-		hier steht <u>unterstrichener Text</u> und <br>
-		hier steht <b style="color:red;">roter Text</b> und <br>
-		hier steht <b style="color:blue;">blauer Text</b>. <br>
+		Jetzt will ich drei verschiedene Gruppen für ein Muster mischen. Hierfür gibt es ziemlich viele Möglichkeiten, nämlich <b> 10 x 10 x 10 = 1000 </b> Stück. Das würde viel zu lange dauern.<br><br>
+Ich kann aber wieder eine ganze Menge von diesen Möglichkeiten von vorne herein ausschließen, wie ich es bei den doppelt gemischten Mustern auch schon gemacht habe.<br><br>
+Ich suche die dreifach gemischten Muster, bei denen alle drei Gruppen verschieden sind, denn wenn zwei oder sogar alle drei Gruppen gleich sind, dann bekomme ich ja wieder nur doppelt oder einfach gemischte Muster. Aber wie viele Kombinationen von verschiedenen Gruppen gibt es überhaupt?
+	</p>
+</div>
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+		Wenn ich mir die erste Gruppe für eine Kombination aussuche, kann ich erstmal unter
+allen <b>10</b> Gruppen frei auswählen. Bei der zweiten Gruppe habe ich dann aber nur noch
+<b>9</b> Möglichkeiten, weil ich ja nicht die gleiche Gruppe nochmal auswählen will. Für die dritte Gruppe habe ich dann sogar nur noch <b>8</b> Möglichkeiten zur Auswahl, denn zwei Gruppen wurden ja schon gewählt. Insgesamt gibt es also <b>10 x 9 x 8 = 720</b> Kombinationen mit verschiedenen Gruppen. Das sind leider immer noch zu viele zum Ausprobieren.<br><br>
+Aber schon bei den doppelt gemischten Mustern haben wir ja gesehen, dass wir nicht die ganze Tabelle ausprobieren müssen. Die komplette untere Hälfte der Tabelle konnte ich
+dort ausschließen, weil es egal ist ob ich eine Gruppe <b>A</b> mit einer Gruppe <b>B</b> mische oder umgekehrt, die Gruppe <b>B</b> mit der Gruppe <b>A</b>.<br><br>
+Bei dreifach gemischten Mustern gibt es sogar noch mehr Möglichkeiten für dieselbe Kombination: Es macht keinen Unterschied ob ich die Gruppen <b>A</b>, <b>B</b> und <b>C</b> in dieser Reihen-folge auswähle oder: <b>A-C-B</b>, <b>B-A-C</b>, <b>B-C-A</b>, <b>C-A-B</b> oder <b>C-B-A</b>. Alle diese <b>6</b> verschiedenen Reihenfolgen für <b>A</b>, <b>B</b> und <b>C</b> nennt man <u>Permutationen</u>. Das heißt, dass ich davon immer nur eine Reihenfolge ausprobieren muss, um damit <b>6</b> Felder in meiner Tabelle gleichzeitig zu überprüfen. Es reicht also aus, <b>720 / 6 = 120</b>  Möglichkeiten zu überprüfen. Das klingt schon machbarer. Die folgende Tabelle listet alle <b>120</b> sortierten Kombinationen auf.
+
+	</p>
+</div>
+  
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<br>
+		<img src="images/3fach_Tabelle.png" alt="Tabelle" width="800">
+	<br>
+</div>
+
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<p>
+		
+Ich nummeriere dafür die Gruppen mit den Zahlen 1 bis 10 durch, so wie sie in den Zeilen der Tabelle im <a href="muster_43.html"> Kapitel 4.3</a> mit den doppelt gemischten Mustern stehen. Von den <b>6</b> verschiedenen Reihenfolgen überprüfe ich dann immer nur die, bei der die erste Gruppe die kleinste Zahl hat und die letzte Gruppe die größte (sortierte Reihenfolge). Wenn ich also die Gruppe <b>4</b> mit der Gruppe <b>9</b> und der Gruppe <b>1</b> mische, nenne ich das dreifach gemischte Muster <b>1-4-9</b>, denn die <b>1</b> ist die kleinste Zahl und die <b>9</b> die größte.<br><br>
+Wie bei den doppelt gemischten Mustern können zwei Gruppen nur kombiniert werden, wenn sie zusammenpassen, das heißt wenn sie beide zwei aufeinanderfolgende Polygone haben, die gleich sind (Überlappung). Bei den doppelt gemischten Mustern konnte ich so viele Kombinationen ausschließen, wenn die Codes nicht zwei gleiche aufeinanderfolgende Zahlen hatten. Solche Kombinationen können aber als dreifach gemischte Muster trotzdem noch funktionieren, nämlich wenn jeweils zwischen den beiden nicht passenden Gruppen die dritte Gruppe liegt.
+
+
 	</p>
 </div>
 
 
-<!-- ********** -->
+
+<div class="col s12 m8 l8" style="font-size: 1.30rem;">
+	<br>
+		<img src="images/3fach_Bild_1.png" alt="Text" width="500">
+	<br>
+</div>
 
 
 <div class="col s12 m8 l8" style="font-size: 1.30rem;">
-	<p><b>
-		ÜBERSCHRIFT
-	</b></p>
+	<p>
+		
+Das Bild zeigt ein dreifach gemischtes Muster aus den Gruppen <b>1</b> (<b style="color:blue;">3-3-3-3-3-3</b>), <b>5</b> (<b style="color:blue;">4-3-4-3-3</b>) und <b>10</b> (<b style="color:blue;">3-4-4-6</b>). Obwohl die Gruppen <b>1</b> und <b>10</b> als doppelt gemischtes Muster nicht zusammenpassen, funktioniert das dreifach gemischte Muster. Das liegt daran, dass zwischen den Gruppen <b>1</b> (pink) und den Gruppen <b>10</b> (grün) immer eine Gruppe <b>5</b> (hellblau) liegt und daher die nicht-passenden Gruppen <b>1</b> und <b>10</b> niemals direkt aneinander passen müssen.<br><br>
+
+Wenn aber eine der drei Gruppen mit <u>beiden</u> anderen Gruppen nicht zusammenpasst,
+dann kann ich diese Kombination wirklich ausschließen, denn damit ist dann kein dreifach gemischtes Muster mehr möglich. Ich kann aus der Tabelle weiter oben also alle die Kombinationen streichen, bei denen eine der Gruppen mit <u>beiden</u> anderen Gruppen nicht zusammenpasst (rote Kreuze). Dann bleiben sogar nur noch <b>60</b> Kombinationen zum Ausprobieren übrig!<br><br>
+Bei <b>28</b> von diesen <b>60</b> Kombinationen habe ich dreifach gemischte Muster gefunden (grüne Kreise in der Tabelle). Manche sehen den zweifach gemischten Mustern ähnlich, aber andere sehen ganz anders aus. Bei <b>5</b> Kombinationen habe ich sogar mehrere Muster gefunden (mehrere grüne Kreise). Auf der nächsten Seite zeige ich Fotos von <b>35</b> (aus 37) Mustern. Die Bilder sind jeweils mit der Kombination von Gruppen bezeichnet.
+
+
+
+	</p>
 </div>
+
 
 
 <!-- ********** -->
